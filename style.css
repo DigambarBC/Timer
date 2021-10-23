@@ -1,0 +1,100 @@
+
+.container{
+  height: 100vh;
+}
+
+.ldBar path.mainline {
+    stroke-width: 1;
+    stroke: #6200EE;
+    /* stroke: #d10826; */
+    /* stroke-linecap: round; */
+  }
+  .ldBar path.baseline {
+    stroke-width: 1;
+    stroke: #80808038;
+    stroke-linecap: round;
+  }
+  .ldBar-label {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+
+  .loader{
+    margin-top: 2%;
+  }
+  .loader .btn{
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .btn{
+    border-radius: 50px;
+  }
+  .playBtn{
+    background-color: #6200EE;
+    color: white;
+  }
+  .playBtn:hover{
+    background-color: #5102c0;
+    color: white;
+  }
+  .ldBar-label{
+    
+    display: none;
+  }
+
+.timer{
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  margin: 42% 25%;
+}
+.TimeBar{
+
+  font-family: sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    width: 100px;
+    margin-right: -17px;
+    margin-left: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.colon{
+  margin-left: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 88px;
+}
+.Head{
+  color: #6200EE;
+  margin-top: 40px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 6%;
+}
+.label{
+  text-align: center;
+  margin-left: 56px;
+  margin-right: 24px;
+}
+
+.modal-custom{
+  background-color: #6200EE !important;
+}
+

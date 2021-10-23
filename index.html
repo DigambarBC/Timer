@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="asset/progressbar/loading-bar.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #CircleBar {
+            width: 35% !important;
+            height: 35% !important;
+        }
+
+        @media (max-width:480px) {
+            #CircleBar {
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .timer{
+                font-size: 37px;
+            }
+
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid">
+
+        <section id="Loader" class="loader" hidden>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-center">
+
+                        <div id="CircleBar" class="ldBar label-center" data-preset="circle" data-unit="Hello">
+                            <h1 class="timer"></h1>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex justify-content-center">
+                        <div>
+                            <button id="Action" class="btn btn-rounded btn-lg btn-danger mb-4">Pause</button>
+                            <button id="cancle" class="btn btn-rounded btn-lg btn-dark mb-4">cancle</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!--Modal: Alert-->
+            <div class="modal fade" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-notify" role="document">
+                    <!--Content-->
+                    <div class="modal-content text-center">
+                        <!--Header-->
+                        <div class="modal-header modal-custom d-flex justify-content-center">
+                            <p class="heading">Time's Up ! </p>
+                        </div>
+
+                        <!--Body-->
+                        <div class="modal-body">
+
+                            <i class="fas fa-hourglass-end fa-4x animated rotateIn mb-4" style="color: #6200EE;"></i>
+
+                            <p>You can restart or cancle timmer</p>
+
+                        </div>
+
+                        <!--Footer-->
+                        <div class="modal-footer flex-center">
+                            <button id="Restart" class="btn playBtn">Restart</button>
+                            <a id="DismissBtn" type="button" class="btn btn-outline-dark waves-effect"
+                                data-dismiss="modal">Dismiss</a>
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+            </div>
+            <!--Modal: Alert-->
+
+
+
+        </section>
+
+        <section id="Timer">
+            <div>
+                <h1 class="Head"><i class="fas fa-stopwatch mr-3"></i>Timer</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 20vh;">
+                            <input id="Hours" class="quantity TimeBar" maxlength="2" min="00" max="99" value="00"
+                                type="number">
+                            <h1 class="colon">:</h1>
+                            <input id="Minutes" class="quantity TimeBar" maxlength="2" min="00" max="59" value="00"
+                                type="number">
+                            <h1 class="colon">:</h1>
+                            <input id="Seconds" class="quantity TimeBar" maxlength="2" min="00" max="59" value="00"
+                                type="number">
+
+                        </div>
+                    </form>
+
+                    <div class="d-flex justify-content-center" style="margin: 0px 35%;">
+                        <p class="label">HOURS</p>
+                        <p class="label">MINUTES</p>
+                        <p class="label">SECONDS</p>
+                    </div>
+
+                    <div class="d-flex justify-content-center" style="margin-top: 5%;">
+                        <button id="StartTimer" class="btn playBtn">Start</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <h1 id="head">Hello</h1> -->
+        </section>
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <script src="asset/progressbar/loading-bar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- MDB -->
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+    <script src="main.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
