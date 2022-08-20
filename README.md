@@ -5,7 +5,7 @@ In this project i have develop simple javascript timer. By using this timer you 
 ## Preview
 
 View Live Preview 👇  
-https://digambarbc.github.io/Timer/
+https://digambar2002.github.io/Timer/
 
 ## Screenshots
 1] Set Timer Page
