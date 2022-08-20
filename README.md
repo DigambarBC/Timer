@@ -1,5 +1,5 @@
 
-# Be Productive (Browser Extention)
+# Timer (Javascript Tool)
 
 In this project i have develop simple javascript timer. By using this timer you can challange yourself to complete specific task
 ## Preview
